@@ -13,8 +13,6 @@ fn main() {
     let _session = "n2WiC2zLCLkJhmG3mpSq0x8FlX2hBDOBmmat5LuILJeAo8m2rHgb06VNnTOlIstd4lNoOZrgzW3rWqXbXFDTvF3460";
     let _auth = "1snyaqhj8ZSKNuCeMdPB5CXWJjWerteM43ICORCHz0P3X5GpCJzIR2z9xEvfzHMLGkKfqCvtcCQ6fHIrh0v2QzbS2Q251EAAzEuuhkC0yZ2cWtNIc5ehll8XMA2bQCPzZQ6t5Kz8p7iodj5ILgucMie2yJRThROI6C";
 
-    // let _auth = encode("X-Аутентифицировать: NTLM-C22B315C040AE6E0EFEE3518D830362B", &_key, 123206400).unwrap();
-    // let token = encode("c2.pdtpartner.com:5555", &_key, 123206400).unwrap();
     println!("...");
     let server_port = decode(&_session, &_key, 0).unwrap();
     // println!("token : {}", token);
