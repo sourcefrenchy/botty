@@ -1,14 +1,12 @@
-use std::net::{TcpStream};
 use std::io::{Read, Write};
+use std::net::TcpStream;
 use std::str::from_utf8;
 
 extern crate ring;
 
 use branca::decode;
 
-
 fn main() {
-
     let _key = b"7861a1fd-d2a2-4a87-8855-d3458dfa".to_vec();
     let _session = "n2WiC2zLCLkJhmG3mpSq0x8FlX2hBDOBmmat5LuILJeAo8m2rHgb06VNnTOlIstd4lNoOZrgzW3rWqXbXFDTvF3460";
     let _auth = "2QYcCJeiBTwMmEBm7vim5A7lZTQqnF30uce2MVjtLvLRWIYMHc9dbj3gpBPcHVSLUiRfmW2LF8gcRImnw7JUtUmNM5swD1I0SERuCrvH1hyGOWjPOTupuMa9gwsqPhbv2FH77VgeRZveTjbu9RV0Q3OoehSqpRDy2wchkc1Ev9";
@@ -37,12 +35,12 @@ fn main() {
                         let text = from_utf8(&data).unwrap();
                         println!("неожиданный {}", text);
                     }
-                },
+                }
                 Err(e) => {
                     println!("ошибка {}", e);
                 }
             }
-        },
+        }
         Err(e) => {
             println!("ошибка {}", e);
         }
