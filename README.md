@@ -1,6 +1,6 @@
 # botty
 
-First steps in Rust to annoy participants liking reverse engineering to an upcoming CTF I organize. 
+First steps in Rust to annoy participants enjoying reverse engineering binaries - this is for an upcoming CTF I organize. 
 
 Just trying to generate a windows PE without having to install Windows and being able to run the code on Linux as well. Trying to obfuscate a little bit stuff to force participants to tcpdump while running the binary. 
 
